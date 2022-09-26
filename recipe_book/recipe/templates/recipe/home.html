@@ -1,0 +1,17 @@
+{% extends "recipe/base.html" %}
+
+{% block content %}
+<h1>Welcome to Moofs Restaurant!</h1>
+
+<div>
+    <a href="{% url 'menulist' %}">Add Menu item</a>
+    <a href="{% url 'ingredientslist' %}">Add Ingredient</a>
+    <a href="{% url 'purchasedlist' %}">Add Purchased</a>
+
+    
+</div>
+<a href="{% url 'logout' %}">Log Out</a>
+
+
+
+{% endblock %}
